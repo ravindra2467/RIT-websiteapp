@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>RIT</title>
+	<link rel="stylesheet" type="text/css" href="../CSS/styles.css">
+	<link rel="stylesheet" type="text/css" href="../fontawesome/css/all.css">
+	<link rel="icon" type="image/x-icon" href="../Images/icons/r.svg">
+	<link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../bootstrap/css/mdb.css">
+	<style>
+		header{
+	background-color:black;
+	height:60px;
+	display:flex;
+	flex-direction: row;
+	align-items:center;
+	justify-content:space-between;
+}
+header>h1{
+    font-size: 40px;
+    margin: 0px 0px 0px 10px;
+    color: whitesmoke;
+}
+header>h1>a{
+	text-decoration: none;
+	cursor: pointer;
+}
+header>#links>a{
+    text-decoration: none;
+    color: whitesmoke;
+    margin:7px;
+	padding:6px 10px;
+    border-radius: 10px;
+}
+header>#links>a:hover{
+    cursor: pointer;
+    background-color:yellow;
+	color:limegreen;
+	box-shadow:0 0 10px white;
+    
+}
+.fas,.far{
+	padding: 5px;
+}
+header>h1>a>span{
+    color:yellow;
+}
+
+/*----- -------------------------------------media queries-----------------------------------------*/
+@media(min-width: 0px) and (max-width:700px ){
+	header{
+		flex-direction: column;
+		height: 130px;
+	}
+	header>h1{
+		font-size: 35px;
+		align-items: center;
+	}
+	header>#lk{
+		position: relative;
+		top: -20px;
+		padding: -10px;
+		align-items: center;
+		display: flex;
+		flex-direction: row;
+		justify-content: normal;
+	}
+}
+@media(min-width: 701px) and (max-width: 1045px){
+	header{
+		height: 100px;
+		flex-direction: column;
+	}
+	header>h1{
+		font-size: 40px;
+		text-align: center;
+	}
+
+}
+@media(min-width: 1046px) and (max-width: 1187px){
+	header{
+		height: 80px;
+	}
+	header>h1{
+		font-size: 30px;
+	}
+}
+@media(min-width: 1188px) and (max-width: 1366px){
+	header{
+		height: 90px;
+		stop-color: whitesmoke;
+		scroll-behavior: smooth;
+	}
+}
+
+
+
+/*~~~~~~~~~~~~-----------------------nav bar-----------------------------------~~~~~~~~~~~*/
+nav{
+	background-color: rgba(0, 0, 0, .5);
+}
+nav>#nav-links{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+nav>#nav-links>a{
+	text-decoration: none;
+    color: whitesmoke;
+    margin:7px;
+	padding:6px 10px;
+    border-radius: 10px;
+}
+nav>#nav-links>a:hover{
+	cursor: pointer;
+    background-color:yellow;
+	color:limegreen;
+	box-shadow:0 0 10px white;
+}
+/*--------------registration form----------------*/
+		#main{
+			align-content: center;
+			border: 2px dashed black;
+			margin-left: 150px;
+			margin-right: 150px;
+			background: linear-gradient(180deg,lightblue,violet);
+		}
+		h2{
+			color: blue;
+		}
+		#main form table{
+			margin-left: 170px;
+			margin-right: 170px;
+			padding: 40px;
+			width: 100%;
+		}
+		table td{
+			padding: 10px 5px 10px 5px;
+		}
+		label{
+			font-family: cursive;
+			font-size: 15px;
+		}
+		#main>form{
+			padding: 10px;
+		}
+		button{
+			border-radius: 20px;
+			background: linear-gradient(180deg,lightblue,violet);
+			box-sizing: 10px;
+			box-shadow: 5px darkred;
+		}
+		button:hover{
+			cursor: pointer;
+			color: darkred;
+		}
+	</style>
+</head>
+<body>
+
+	<!-- ----------------------------Header section---------------------------- -->
+	<header>
+		<h1><a href="../HTML/index.html"><span>Ravindra</span></a> Institute of Technology</h1>
+		<div id="links">
+			<a href="../HTML/index.html"><i class="fas fa-home"></i>Home</a>
+			<a href="department.html"><i class="far fa-building"></i>Departments</a>
+			<a href="library.html"><i class="fas fa-book-open"></i>Library</a>
+			<a href="examinations.html"><i class="fas fa-diagnoses"></i>Examinations</a>
+			<a href="login.html"><i class="fas fa-sign-in-alt"></i>Log-In</a>
+		</div>
+	</header>
+	<!-- ---------------------------Navbar Section------------------------------- -->
+	<nav>
+		<div id="nav-links">
+			<a href="admissions.html"><i class="fas fa-hand-point-right"></i>Admissions</a>
+			<a href="branches.html"><i class="fas fa-layer-group"></i>Branches</a>
+			<a href="palacements.html"><i class="fas fa-road"></i>Placements</a>
+			<a href="alumni.html"><i class="fas fa-users-cog"></i>Alumni</a>
+			<a href="faculty.html"><i class="fas fa-users"></i>Faculty</a>
+			<a href="gallery.html"><i class="fas fa-images"></i>Gallery</a>
+			<a href="aboutus.html"><i class="far fa-address-card"></i>About-Us</a>
+			<a href="contactus.html"><i class="fas fa-phone-alt"></i>Contact-Us</a>
+		</div>
+	</nav>
+	<!-- --------------------------registration page------------------------------ -->
+	<h2 align="center">Student Registration Form</h2>
+	<div id="main">
+		<fieldset>
+		<legend>Provide your details</legend>
+		<form>
+			<table>
+				<tr>
+					<td>
+						<label>First Name</label>
+					</td>
+					<td>
+						<input type="text" name="First_Name" required>(<i>Maximum 30 Characters are allowed</i>)
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label>Last Name</label>
+					</td>
+					<td>
+						<input type="text" name="Last_Name" required>(<i>Maximum 30 Characters are allowed</i>)
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label>Email</label>
+					</td>
+					<td>
+						<input type="email" name="Email" required>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label>Mobile Number</label>
+					</td>
+					<td>
+						<input type="Number" name="Mobile_Number" required>(<i>Maximum 10-Digits</i>)
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label>Gender</label>
+					</td>
+					<td>
+						<input type="radio" name="Gender" required><i>Male</i>
+						<input type="radio" name="Gender" required><i>Female</i>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label>Date Of Birth</label>
+					</td>
+					<td>
+						<select required>
+							<option>Day</option>
+							<option>01</option>
+							<option>02</option>
+							<option>03</option>
+							<option>04</option>
+							<option>05</option>
+							<option>06</option>
+							<option>07</option>
+							<option>08</option>
+							<option>09</option>
+							<option>10</option>
+							<option>11</option>
+							<option>12</option>
+							<option>13</option>
+							<option>14</option>
+							<option>15</option>
+							<option>16</option>
+							<option>17</option>
+							<option>18</option>
+							<option>19</option>
+							<option>20</option>
+							<option>21</option>
+							<option>22</option>
+							<option>23</option>
+							<option>24</option>
+							<option>25</option>
+							<option>26</option>
+							<option>27</option>
+							<option>28</option>
+							<option>29</option>
+							<option>30</option>
+							<option>31</option>
+						</select>
+						<select required>
+							<option>Month</option>
+							<option>January</option>
+							<option>February</option>
+							<option>March</option>
+							<option>May</option>
+							<option>June</option>
+							<option>July</option>
+							<option>August</option>
+							<option>September</option>
+							<option>October</option>
+							<option>November</option>
+							<option>December</option>
+						</select>
+						<select required>
+							<option>Year</option>
+							<option>1999</option>
+							<option>2000</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label>Address</label>
+					</td>
+					<td>
+						<textarea rows="8" cols="40" required></textarea>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label>City</label>
+					</td>
+					<td>
+						<input type="text" name="City" required><i>(Maximum 20 Characters allowed)</i>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label>Pin Code</label>
+					</td>
+					<td>
+						<input type="Number" name="pin_Code" required><i>(Maximum 6 Numbers allowed)</i>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label>State</label>
+					</td>
+					<td>
+						<input type="text" name="State" required><i>(Maximum 20 Characters allowed)</i>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label>Country</label>
+					</td>
+					<td>
+						<input type="text" name="Country" required>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label>Hobbies</label>
+					</td>
+					<td>
+						<input type="checkbox" name="Hobbies" required><i>Listening Music</i>
+						<input type="checkbox" name="Hobbies" required><i>Drawing</i>
+						<input type="checkbox" name="Hobbies" required><i>Singing</i><br/>
+						<input type="checkbox" name="Hobbies" required><i>Dancing</i>
+						<input type="checkbox" name="Hobbies" required><i></i>Sketching<br/>
+						<input type="checkbox" name="Hobbies" required><i>Others</i>
+						<input type="text" name="Hobbies"><i>(Maximum 50 Characters are allowed)</i>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label>Qualification</label>
+					</td>
+					<td>
+						<input type="checkbox" name="Qualification" required><i>High School(10th)</i><br>
+						<input type="checkbox" name="Qualification" required><i>Higher School(12th)</i><br>
+						<input type="checkbox" name="Qualification" required><i>Graduation(Bachelor's)</i><br>
+						<input type="checkbox" name="Qualification" required><i>Post Graduation(Masters)</i><br>
+						<input type="checkbox" name="Qualification" required><i>Ph.D</i><br>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label>Corses Applied For</label>
+					</td>
+					<td>
+						<input type="radio" name="courses" required><i>B.tech</i>
+							<input type="checkbox" name="btech"><i>CSE</i>
+							<input type="checkbox" name="btech"><i>IT</i>
+							<input type="checkbox" name="btech"><i>ECE</i>
+							<input type="checkbox" name="btech"><i>EEE</i>
+							<input type="checkbox" name="btech"><i>Mechanical</i>
+							<input type="checkbox" name="btech"><i>Civil</i>
+							<input type="checkbox" name="btech"><i>Others</i><br>
+						<input type="radio" name="courses" required><i>M.tech</i>
+							<input type="checkbox" name="mtech"><i>CSE</i>
+							<input type="checkbox" name="mtech"><i>Civil</i>
+							<input type="checkbox" name="mtech"><i>Mechanical</i>
+							<input type="checkbox" name="mtech"><i>Others</i><br>
+						<input type="radio" name="courses" required><i>MBA</i><br>
+						<input type="radio" name="courses" required><i>Integrated MBA</i><br>
+						<input type="radio" name="courses" required><i>MCA</i><br>
+					</td>
+				</tr>
+				<td>
+					
+				</td>
+				<td>
+					<button>Submit</button>
+					<button>Reset</button>
+				</td>
+			</table>
+		</form>
+		</fieldset>
+	</div>
+
+	<!-- --------------------footer--------------------- -->
+	<footer>
+		<div id="iname">
+			<h1 style="margin-top: 40px;"><img src="../Images/icons/r.svg"><span><a href="index.html" id="anc"><i>R</i>IT</a></span></h1>
+			<p>&copy;2022 all Rights Reserved by <a href="https://ravindra2467.blogspot.com/" id="blogn">Ravindra</a></p>
+			<span class="mno" id="footer-con"><i class="fas fa-mobile-alt"></i>&nbsp <a href="callTo:+919390974899">+91 93909 74899</a> <span>&nbsp &nbsp</span></i> <i class="fas fa-envelope-open-text"></i><a href="mailTo:ravindra2467@gmail.com" class="a">ravindra2467@gmail.com</a></span>
+		</div>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>RIT</title>
+	<link rel="stylesheet" type="text/css" href="../CSS/styles.css">
+	<link rel="stylesheet" type="text/css" href="../CSS/login.css">
+	<link rel="stylesheet" type="text/css" href="../fontawesome/css/all.css">
+	<link rel="icon" type="image/x-icon" href="../Images/icons/r.svg">
+</head>
+<body>
+
+	<!-- ----------------------------Header section---------------------------- -->
+	<header>
+		<h1><a href="../HTML/index.html"><span>Ravindra</span></a> Institute of Technology</h1>
+		<div id="links">
+			<a href="../HTML/index.html"><i class="fas fa-home"></i>Home</a>
+			<a href="department.html"><i class="far fa-building"></i>Departments</a>
+			<a href="library.html"><i class="fas fa-book-open"></i>Library</a>
+			<a href="examinations.html"><i class="fas fa-diagnoses"></i>Examinations</a>
+			<a href="login.html"><i class="fas fa-sign-in-alt"></i>Log-In</a>
+		</div>
+	</header>
+	<!-- ---------------------------Navbar Section------------------------------- - -->
+	<nav>
+		<div id="nav-links">
+			<a href="admissions.html"><i class="fas fa-hand-point-right"></i>Admissions</a>
+			<a href="branches.html"><i class="fas fa-layer-group"></i>Branches</a>
+			<a href="palacements.html"><i class="fas fa-road"></i>Placements</a>
+			<a href="alumni.html"><i class="fas fa-users-cog"></i>Alumni</a>
+			<a href="faculty.html"><i class="fas fa-users"></i>Faculty</a>
+			<a href="gallery.html"><i class="fas fa-images"></i>Gallery</a>
+			<a href="aboutus.html"><i class="far fa-address-card"></i>About-Us</a>
+			<a href="contactus.html"><i class="fas fa-phone-alt"></i>Contact-Us</a>
+		</div>
+	</nav>
+
+	
+	<!-- ==================================login page--================================== -->
+<div id="bod">
+	<div class="container">
+		<div class="intro-text">
+			<h2>Login Here</h2>
+			<p>Don't have an account? <a href="signup.html">Signup</a></p>
+		</div>
+		<form>
+			<input type="text" name="username" placeholder="Username" required/>
+			<input type="password" name="password" id='pw' placeholder="Password" required/>
+			<input type="checkbox" id="check" name=""> <span>Show Password</span>
+			<div class="check-box">
+				<input type="checkbox" id="check"/>
+				<label for="check">Remember 
+					<a href="#">Password</a></label>
+			</div>
+			<button type="submit">Log In</button>
+		</form>
+	</div>
+</div>
+
+
+<!--  ==================footer=================== -->
+<footer>
+		<div id="iname">
+			<h1  style="margin-top: 40px;"><img src="../Images/icons/r.svg"><span><a href="index.html" id="anc"><i>R</i>IT</a></span></h1>
+			<p>&copy;2022 all Rights Reserved by <a href="https://ravindra2467.blogspot.com/" id="blogn">Ravindra</a></p>
+			<span class="mno" id="footer-con"><i class="fas fa-mobile-alt"></i>&nbsp <a href="callTo:+919390974899">+91 93909 74899</a> <span>&nbsp &nbsp</span></i> <i class="fas fa-envelope-open-text"></i><a href="mailTo:ravindra2467@gmail.com" class="a">ravindra2467@gmail.com</a></span>
+		</div>
+	</footer>
+
+	<!-- Script code -->
+	<script>
+		let checkBox=document.querySelector('#check');
+		let passwordBox=document.querySelector('#pw');
+		checkBox.addEventListener('change',function(){
+			let typeAttribute=passwordBox.getAttribute('type');
+			if (typeAttribute==='password')
+			{
+				passwordBox.setAttribute('type','text');
+			}
+			else
+			{
+				passwordBox.setAttribute('type','password');
+			}
+		});
+	</script>
+</body>
+</html>

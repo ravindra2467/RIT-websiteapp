@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>RIT</title>
+	<link rel="stylesheet" type="text/css" href="../CSS/styles.css">
+	<link rel="stylesheet" type="text/css" href="../fontawesome/css/all.css">
+	<link rel="icon" type="image/x-icon" href="../Images/icons/r.svg">
+	<link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../bootstrap/css/mdb.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+	<style>
+		html{
+			scroll-behavior: initial;
+		}
+		header{
+	background-color:black;
+	height:60px;
+	display:flex;
+	flex-direction: row;
+	align-items:center;
+	justify-content:space-between;
+}
+header>h1{
+    font-size: 40px;
+    margin: 0px 0px 0px 10px;
+    color: whitesmoke;
+}
+header>h1>a{
+	text-decoration: none;
+	cursor: pointer;
+}
+header>#links>a{
+    text-decoration: none;
+    color: whitesmoke;
+    margin:7px;
+	padding:6px 10px;
+    border-radius: 10px;
+}
+header>#links>a:hover{
+    cursor: pointer;
+    background-color:yellow;
+	color:limegreen;
+	box-shadow:0 0 10px white;
+    
+}
+.fas,.far{
+	padding: 5px;
+}
+header>h1>a>span{
+    color:yellow;
+}
+/*----- -------------------------------------media queries-----------------------------------------*/
+@media(min-width: 0px) and (max-width:700px ){
+	header{
+		flex-direction: column;
+		height: 130px;
+	}
+	header>h1{
+		font-size: 35px;
+		align-items: center;
+	}
+	header>#lk{
+		position: relative;
+		top: -20px;
+		padding: -10px;
+		align-items: center;
+		display: flex;
+		flex-direction: row;
+		justify-content: normal;
+	}
+}
+@media(min-width: 701px) and (max-width: 1045px){
+	header{
+		height: 100px;
+		flex-direction: column;
+	}
+	header>h1{
+		font-size: 40px;
+		text-align: center;
+	}
+
+}
+@media(min-width: 1046px) and (max-width: 1187px){
+	header{
+		height: 80px;
+	}
+	header>h1{
+		font-size: 30px;
+	}
+}
+@media(min-width: 1188px) and (max-width: 1366px){
+	header{
+		height: 90px;
+		stop-color: whitesmoke;
+		scroll-behavior: smooth;
+	}
+}
+	</style>
+</head>
+<body class="bg-light">
+
+	<!-- ----------------------------Header section---------------------------- -->
+	<header>
+		<h1><a href="../HTML/index.html"><span class="animate__animated animate__slideInLeft">Ravindra</span></a> Institute of Technology</h1>
+		<div id="links">
+			<a href="../HTML/index.html"><i class="fas fa-home"></i>Home</a>
+			<a href="department.html"><i class="far fa-building"></i>Departments</a>
+			<a href="library.html"><i class="fas fa-book-open"></i>Library</a>
+			<a href="examinations.html"><i class="fas fa-diagnoses"></i>Examinations</a>
+			<a href="login.html"><i class="fas fa-sign-in-alt"></i>Log-In</a>
+		</div>
+	</header>
+	<!-- ---------------------------Navbar Section------------------------------- -->
+	<nav>
+		<div id="nav-links">
+			<a href="admissions.html"><i class="fas fa-hand-point-right"></i>Admissions</a>
+			<a href="branches.html"><i class="fas fa-layer-group"></i>Branches</a>
+			<a href="palacements.html"><i class="fas fa-road"></i>Placements</a>
+			<a href="alumni.html"><i class="fas fa-users-cog"></i>Alumni</a>
+			<a href="faculty.html"><i class="fas fa-users"></i>Faculty</a>
+			<a href="gallery.html"><i class="fas fa-images"></i>Gallery</a>
+			<a href="aboutus.html"><i class="far fa-address-card"></i>About-Us</a>
+			<a href="contactus.html"><i class="fas fa-phone-alt"></i>Contact-Us</a>
+		</div>
+	</nav>
+	<!-- -------------------------Landing page-------------------------------------- -->
+	<div class="justify-content-center container container-sm container-md container-lg">
+		<div class="row">
+			<div class="col-md-10 jumbotron-fluid justify-content-center">
+				<div class="card-header ml-5">
+					<h1 class="h2 text-center text-uppercase table-hover text-justify text-sm-center text-md-center text-lg-center ml-5">controller of examinations</h1>
+					<p class="small animate__animated animate__slideInRight text-center">For Latest Information <a href="" class="text-uppercase text-danger">Click Here</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- --------------------aside left-layout---------------- -->
+	<div id="section-exam">
+		<aside class="animate__animated animate__slideInLeft" id="aside-left">
+			<p><u>BRANCHES</u></p>
+			<a href="#B.Tech">B.Tech</a>
+			<a href="#M.Tech">M.Tech</a>
+			<a href="#MBA">MBA</a>
+			<a href="#IMBA">IMBA</a>
+			<a href="#MCA">MCA</a>
+		</aside>
+	</div>
+	<!-- ------------------------aside Right-layout -->
+	<div id="section-exam">
+		<aside class="animate__animated animate__slideInRight" id="aside-right">
+			<p><u>Staff</u></p>
+			<a href="">Chairman</a>
+			<a href="">Controller</a>
+			<a href="">Assistant-Controller</a>
+			<a href="">clerk</a>
+			<a href="">Others</a>
+		</aside>
+	</div>
+	<!-- ---------------body section---------------------- -->
+	<div id="section-exam">
+		<section class="bg-light">
+			<h1>B.Tech</h1>
+			<article id="B.Tech">
+			<h2>CSE</h2>
+				<p class="small mr-3">Computer Science Engineering (CSE) encompasses a variety of topics that relates to computation, like analysis of algorithms, programming languages, program design, software, and computer hardware.</p>
+
+				<p class="small mr-3">Computer Science engineering has roots in electrical engineering, mathematics, and linguistics. In the past Computer Science was taught as part of mathematics or engineering departments & in the recent days it has emerged as a separate engineering field.</p>
+				<p class="small">Check for Latest Results <a href="">Click Here</a></p>
+			</article>
+			<article id="B.Tech">
+			<h2>IT</h2>
+				<p class="small mr-3">BTech IT prepares students in the concepts of software development, information security, business software, maintaining databases and networks during the 4 years of education. BTech IT directs towards a bright future in the fields of software engineering and development. </p>
+
+				<p class="small mr-3">BTech IT Admission takes place through entrance exams such as JEE Main, JEE Advanced, VITEEE, WBJEE etc. Students must clear the entrance exams with good results in order to study from a college of their choice. </p>
+				
+				<p class="small mr-3">IT courses are in great demand since IT is a dominant industry in India. Students need to be good in Maths and Physics to excel in this line of studies and work. </p>
+				<p class="small">Check for Latest Results <a href="">Click Here</a></p>
+			</article>
+			<article id="B.Tech">
+			<h2>ECE</h2>
+				<p class="small mr-3">Electronics and Communications Engineering (ECE) involves researching, designing, developing, and testing of electronic equipment used in various systems. Electronics and Communications engineers also conceptualize and oversee the manufacturing of communications and broadcast systems.</p>
+
+				<p class="small mr-3">This stream of engineering deals with analog transmission, basic electronics, microprocessors, solid-state devices, digital and analog communication, analog integrated circuits, microwave engineering, satellite communication, antennae, and wave progression. It also deals with the manufacturing of electronic devices, circuits, and communications equipment.</p>
+				<p class="small">Check for Latest Results <a href="">Click Here</a></p>
+			</article>
+			<article id="B.Tech">
+			<h2>EEE</h2>
+				<p class="small mr-3">Electrical and Electronics Engineering (EEE) is a popular engineering course that imparts knowledge related to electrical and machine technology, circuit analysis, telecommunication systems, power engineering and its related industries. A four-year undergraduate course, EEE also emphasises the manufacture and design of electrical devices and the integration of their components into complex systems. Students study a wide range of disciplines, like signal processing, control systems, radio frequency designs, electrical machines, microprocessors in this course.</p>
+				
+				<p class="small">Check for Latest Results <a href="">Click Here</a></p>
+			</article>
+			<article id="B.Tech">
+			<h2>MECHANICAL</h2>
+				<p class="small mr-3">Mechanical engineering is the study, design, development, construction, and testing of mechanical and thermal sensors and devices, including tools, engines, and machines. Mechanical engineering careers center on creating technologies to meet a wide range of human needs.</p>
+
+				<p class="small mr-3">Mechanical engineering subjects include automobile engineering, manufacturing engineering, power plant engineering, thermal engineering, and mechatronics engineering, which is a combination of electrical, computer, and mechanical engineering.</p>
+
+				<p class="small mr-3">What do mechanical engineers do? Mechanical engineers generally work in offices but are sometimes called to the field, visiting worksites when a problem or piece of equipment needs their personal attention, and to oversee elements of construction. Mechanical engineers work mostly in engineering services, research and development, and manufacturing.</p>
+				
+				<p class="small">Check for Latest Results <a href="">Click Here</a></p>
+			</article>
+			<article id="B.Tech">
+			<h2>CIVIL</h2>
+				<p class="small mr-3">One of the oldest engineering disciplines, civil engineering is the applied science of physics and mathematics to address the infrastructural needs of human civilization. This includes construction engineering, bridge engineering, highway engineering, and the basic maintenance of roads, canals, dams, and buildings. Throughout history civil engineers have not only been key to advancing societies, but their work has produced some of our most enduring artifacts - take, for example, the Ancient Egyptian pyramids or the Roman aqueducts – both stand as enormous feats of civil engineering.</p>
+				<p class="small mr-3">A civil engineer helps to design and build public works infrastructure including roads, bridges, canals, dams, airports, sewerage systems, pipelines, buildings, and railways.</p>
+				<p class="small">Check for Latest Results <a href="">Click Here</a></p>
+			</article>
+			<article id="B.Tech">
+			<h2>AUTO MOBILE</h2>
+				<p class="small mr-3">Automobile Engineering is the branch of engineering which deals with designing, manufacturing, mechanical mechanisms as well operations of automobiles. It is also an introduction to vehicle engineering which includes cars, motorcycles, trucks and buses etc.  </p>
+				<p class="small">Check for Latest Results <a href="">Click Here</a></p>
+			</article>
+		</section>
+		<section class="bg-light">
+			<h1>M.Tech</h1>
+			<article id="M.Tech">
+				<h2>CSE</h2>
+				<p class="small mr-3">Computer Science Engineering (CSE) encompasses a variety of topics that relates to computation, like analysis of algorithms, programming languages, program design, software, and computer hardware.</p>
+				<p class="small">Check for Latest Results <a href="">Click Here</a></p>
+			</article>
+			<article id="M.Tech">
+				<h2>CIVIL</h2>
+				<p class="small mr-3">Computer Science Engineering (CSE) encompasses a variety of topics that relates to computation, like analysis of algorithms, programming languages, program design, software, and computer hardware.</p>
+				<p class="small">Check for Latest Results <a href="">Click Here</a></p>
+			</article>
+			<article id="M.Tech">
+				<h2>CSE</h2>
+				<p class="small mr-3">One of the oldest engineering disciplines, civil engineering is the applied science of physics and mathematics to address the infrastructural needs of human civilization. This includes construction engineering, bridge engineering, highway engineering, and the basic maintenance of roads, canals, dams, and buildings.</p>
+				<p class="small">Check for Latest Results <a href="">Click Here</a></p>
+			</article>
+			<article id="M.Tech">
+				<h2>MECHANICAL ENGINEERING</h2>
+				<p class="small mr-3">Mechanical engineering is the study, design, development, construction, and testing of mechanical and thermal sensors and devices, including tools, engines, and machines. Mechanical engineering careers center on creating technologies to meet a wide range of human needs.</p>
+				<p class="small">Check for Latest Results <a href="">Click Here</a></p>
+			</article>
+		</section>
+		<section class="bg-light">
+			<h1>MBA</h1>
+			<article id="MBA">
+				<h2>Master of Business Administration</h2>
+				<p class="small mr-3">MBA is a 2 year professional postgraduate degree course that focuses on fundamentals of modern management, thus providing students with a comprehensive understanding of business while developing leadership and soft skills to implement that knowledge. MBA is the most popular postgraduate business course among individuals who are looking for managerial level jobs. MBA Full Form is Master of Business Administration. Students can study MBA after completing any kind of UG course like BCom, BBA, BTech, MBBS, BCA, BSc, Bachelor of Arts etc.</p>
+				<p class="small">Check for Latest Results <a href="">Click Here</a></p>
+			</article>
+			<article id="IMBA">
+				<h2>Integrated Master of Business Administration</h2>
+				<p class="small mr-3">"The expertly designed MBA for immediate career impact. The online MBA from the University of Illinois' Gies College of Business delivers an industry-leading immersive learning experience designed to enhance leadership capabilities and advance careers.</p>
+				<p class="small">Check for Latest Results <a href="">Click Here</a></p>
+			</article>
+		</section>
+		<section class="bg-light">
+			<h1>MCA</h1>
+			<article id="MCA">
+				<h2>Master of Computer Applications</h2>
+				<p class="small mr-3">Master of Computer Applications (MCA) is a two year professional post-graduate programme for candidates wanting to delve deeper into the world of computer application development with the help of learning modern programming language. The programme is a blend of both theoretical and practical knowledge. An MCA degree endows students’ an opportunity  to work with tools meant to develop better and faster applications.</p>
+				<p class="small">Check for Latest Results <a href="">Click Here</a></p>
+			</article>
+		</section>
+	</div>
+
+	<!-- ---------------------------------------footer----------------------------------- -->
+	<footer>
+		<div id="iname">
+			<h1 style="margin-top: 40px;"><img src="../Images/icons/r.svg"><span><a href="index.html" id="anc"><i>R</i>IT</a></span></h1>
+			<p>&copy;2022 all Rights Reserved by <a href="https://ravindra2467.blogspot.com/" id="blogn">Ravindra</a></p>
+			<span class="mno" id="footer-con"><i class="fas fa-mobile-alt"></i>&nbsp <a href="callTo:+919390974899">+91 93909 74899</a> <span>&nbsp &nbsp</span></i> <i class="fas fa-envelope-open-text"></i><a href="mailTo:ravindra2467@gmail.com" class="a">ravindra2467@gmail.com</a></span>
+		</div>
+	</footer>
+</body>
+</html>

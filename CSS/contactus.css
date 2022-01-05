@@ -1,0 +1,50 @@
+#con{
+	background: rgba(100, 100, 0, 0.4);
+	height: 70vh;
+}
+#con-main{
+	background: rgba(0, 0, 100, 0.25);
+	align-items: center;
+	margin: 0px 400px 0px 400px;
+	height: 100%;
+}
+#con-main>#cont1,#con-main>#cont2,#con-main>#cont3{
+	text-align: center;
+	padding: 40px 10px 10px 10px;
+}
+#con-main>#cont1>span{
+	text-align: center;
+	padding: 40px 10px 10px 10px;
+	color: green;
+}
+#con-main>#cont1>#con-cont1{
+	padding: 5px;
+	font-size: 30px;
+	color: blanchedalmond;
+}
+#con-main>#cont2>span{
+	color: green;
+	padding-top: 40px;
+}
+#con-main>#cont2>#con-cont2{
+	padding: 5px;
+	font-size: 30px;
+	color: blanchedalmond;
+
+}
+#con-main>#cont3{
+	padding-top: 80px;
+	color: darkred;
+}
+#con-cont3{
+	padding-top: 20px;
+}
+#con-cont3>input[type=email]{
+	 width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>RIT</title>
+	<link rel="stylesheet" type="text/css" href="../CSS/styles.css">
+	<link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../bootstrap/css/mdb.css">
+	<link rel="stylesheet" type="text/css" href="../fontawesome/css/all.css">
+	<link rel="icon" type="image/x-icon" href="../Images/icons/r.svg">
+	<style>
+		header{
+	background-color:black;
+	height:60px;
+	display:flex;
+	flex-direction: row;
+	align-items:center;
+	justify-content:space-between;
+}
+header>h1{
+    font-size: 40px;
+    margin: 0px 0px 0px 10px;
+    color: whitesmoke;
+}
+header>h1>a{
+	text-decoration: none;
+	cursor: pointer;
+}
+header>#links>a{
+    text-decoration: none;
+    color: whitesmoke;
+    margin:7px;
+	padding:6px 10px;
+    border-radius: 10px;
+}
+header>#links>a:hover{
+    cursor: pointer;
+    background-color:yellow;
+	color:limegreen;
+	box-shadow:0 0 10px white;
+    
+}
+.fas,.far{
+	padding: 5px;
+}
+header>h1>a>span{
+    color:yellow;
+}
+
+#carouselBasicExample{
+	height: 200px;
+}
+	</style>
+</head>
+<body>
+
+	<!-- ----------------------------Header section---------------------------- -->
+	<header>
+		<h1><a href="../HTML/index.html"><span>Ravindra</span></a> Institute of Technology</h1>
+		<div id="links">
+			<a href="../HTML/index.html"><i class="fas fa-home"></i>Home</a>
+			<a href="department.html"><i class="far fa-building"></i>Departments</a>
+			<a href="library.html"><i class="fas fa-book-open"></i>Library</a>
+			<a href="examinations.html"><i class="fas fa-diagnoses"></i>Examinations</a>
+			<a href="login.html"><i class="fas fa-sign-in-alt"></i>Log-In</a>
+		</div>
+	</header>
+	<!-- ---------------------------Navbar Section------------------------------- -->
+	<nav>
+		<div id="nav-links">
+			<a href="admissions.html"><i class="fas fa-hand-point-right"></i>Admissions</a>
+			<a href="branches.html"><i class="fas fa-layer-group"></i>Branches</a>
+			<a href="palacements.html"><i class="fas fa-road"></i>Placements</a>
+			<a href="alumni.html"><i class="fas fa-users-cog"></i>Alumni</a>
+			<a href="faculty.html"><i class="fas fa-users"></i>Faculty</a>
+			<a href="gallery.html"><i class="fas fa-images"></i>Gallery</a>
+			<a href="aboutus.html"><i class="far fa-address-card"></i>About-Us</a>
+			<a href="contactus.html"><i class="fas fa-phone-alt"></i>Contact-Us</a>
+		</div>
+	</nav>
+
+<!-- --------------------------------------gallery nav section----------------------------- -->
+	<div class="bg-primary">
+		<div class="row">
+			<div class="col-sm-1 col-md-4 col-lg-4 col-xl-4">
+				<img src="../Images/gallery/01.webp" class="img img-primary mt-5 bg-info">
+			</div>
+			<div class="col-sm-1 col-md-4 col-lg-4 col-xl-4">
+				<video class="mt-5 bg-danger" width="400px" height="300px" controls>
+  					<source src="../Images/gallery/videos/girls.mp4" type="video/mp4">
+  				</video>
+			</div>
+			<div class="col-sm-1 col-md-4 col-lg-4 col-xl-4">
+				<img src="../Images/gallery/03.jpg" class="img img-primary mt-5 bg-info">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-1 col-md-4 col-lg-4 col-xl-4">
+				<img src="../Images/gallery/04.png" class="img img-primary mt-5 bg-info">
+			</div>
+			<div class="col-sm-1 col-md-4 col-lg-4 col-xl-4">
+				<img src="../Images/gallery/05.png" class="img img-primary mt-5 bg-info">
+			</div>
+			<div class="col-sm-1 col-md-4 col-lg-4 col-xl-4">
+				<img src="../Images/gallery/06.jpg" class="img img-primary mt-5 bg-info">
+			</div>
+		</div>
+	</div>
+	<div class="bg-secondary">
+		<div class="row">
+			<div class="col-sm-1 col-md-4 col-lg-4 col-xl-4">
+				<img src="../Images/gallery/07.jpg" class="img img-primary mt-5 bg-info">
+			</div>
+			<div class="col-sm-1 col-md-4 col-lg-4 col-xl-4">
+				<img src="../Images/gallery/08.webp" class="img img-primary mt-5 bg-info">
+			</div>
+			<div class="col-sm-1 col-md-4 col-lg-4 col-xl-4">
+				<img src="../Images/gallery/02.webp" class="img img-primary mt-5 bg-info">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-1 col-md-4 col-lg-4 col-xl-4">
+				<img src="../Images/gallery/10.jpg" class="img img-primary mt-5 bg-info">
+			</div>
+			<div class="col-sm-1 col-md-4 col-lg-4 col-xl-4">
+				<video class="mt-5 bg-danger" width="400px" height="300px" controls>
+  					<source src="../Images/gallery/videos/road.mp4" type="video/mp4">
+  				</video>
+			</div>
+			<div class="col-sm-1 col-md-4 col-lg-4 col-xl-4">
+				<img src="../Images/gallery/12.jpg" class="img img-primary mt-5 bg-info">
+			</div>
+		</div>
+	</div>
+	<div class="bg-light">
+		<div class="row">
+			<div class="col-sm-1 col-md-4 col-lg-4 col-xl-4">
+				<img src="../Images/gallery/09.jpg" class="img img-primary mt-5 bg-info">
+			</div>
+			<div class="col-sm-1 col-md-4 col-lg-4 col-xl-4">
+				<img src="../Images/gallery/13.jpg" class="img img-primary mt-5 bg-info">
+			</div>
+			<div class="col-sm-1 col-md-4 col-lg-4 col-xl-4">
+				<img src="../Images/gallery/14.webp" class="img img-primary mt-5 bg-info">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-1 col-md-4 col-lg-4 col-xl-4">
+				<img src="../Images/gallery/15.JPG" class="img img-primary mt-5 bg-info">
+			</div>
+			<div class="col-sm-1 col-md-4 col-lg-4 col-xl-4">
+				<img src="../Images/gallery/16.jpg" class="img img-primary mt-5 bg-info">
+			</div>
+			<div class="col-sm-1 col-md-4 col-lg-4 col-xl-4">
+				<img src="../Images/gallery/17.jpg" class="img img-primary mt-5 bg-info">
+			</div>
+		</div>
+	</div>
+	<div class="bg-info">
+		<div class="row">
+			<div class="col-sm-1 col-md-4 col-lg-4 col-xl-4">
+				<img src="../Images/gallery/18.jpeg" class="img img-primary mt-5 bg-info" download>
+			</div>
+			<div class="col-sm-1 col-md-4 col-lg-4 col-xl-4">
+				<img src="../Images/gallery/20.jpg" class="img img-primary mt-5 bg-info">
+			</div>
+			<div class="col-sm-1 col-md-4 col-lg-4 col-xl-4">
+				<img src="../Images/gallery/19.jpg" class="img img-primary mt-5 bg-info">
+			</div>
+		</div>
+	</div>
+
+	<!-- ---------------------------------footer------------------------------------------ -->
+	<footer>
+		<div id="iname">
+			<h1 style="margin-top: 40px;"><img src="../Images/icons/r.svg"><span><a href="index.html" id="anc"><i>R</i>IT</a></span></h1>
+			<p>&copy;2022 all Rights Reserved by <a href="https://ravindra2467.blogspot.com/" id="blogn">Ravindra</a></p>
+			<span class="mno" id="footer-con"><i class="fas fa-mobile-alt"></i>&nbsp <a href="callTo:+919390974899">+91 93909 74899</a> <span>&nbsp &nbsp</span></i> <i class="fas fa-envelope-open-text"></i><a href="mailTo:ravindra2467@gmail.com" class="a">ravindra2467@gmail.com</a></span>
+		</div>
+	</footer>
+
+</body>
+</html>
