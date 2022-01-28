@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>RIT</title>
+	<link rel="stylesheet" type="text/css" href="../CSS/styles.css">
+	<link rel="stylesheet" type="text/css" href="../CSS/aboutus.css">
+	<link rel="stylesheet" type="text/css" href="../fontawesome/css/all.css">
+	<link rel="icon" type="image/x-icon" href="../Images/icons/r.svg">
+	<link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../bootstrap/css/mdb.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <style>
+		html{
+			scroll-behavior: initial;
+		}
+		header{
+	background-color:black;
+	height:60px;
+	display:flex;
+	flex-direction: row;
+	align-items:center;
+	justify-content:space-between;
+}
+header>h1{
+    font-size: 40px;
+    margin: 0px 0px 0px 10px;
+    color: whitesmoke;
+}
+header>h1>a{
+	text-decoration: none;
+	cursor: pointer;
+}
+header>#links>a{
+    text-decoration: none;
+    color: whitesmoke;
+    margin:7px;
+	padding:6px 10px;
+    border-radius: 10px;
+}
+header>#links>a:hover{
+    cursor: pointer;
+    background-color:yellow;
+	color:limegreen;
+	box-shadow:0 0 10px white;
+    
+}
+.fas,.far{
+	padding: 5px;
+}
+header>h1>a>span{
+    color:yellow;
+}
+/*----- -------------------------------------media queries-----------------------------------------*/
+@media(min-width: 0px) and (max-width:700px ){
+	header{
+		flex-direction: column;
+		height: 130px;
+	}
+	header>h1{
+		font-size: 35px;
+		align-items: center;
+	}
+	header>#lk{
+		position: relative;
+		top: -20px;
+		padding: -10px;
+		align-items: center;
+		display: flex;
+		flex-direction: row;
+		justify-content: normal;
+	}
+}
+@media(min-width: 701px) and (max-width: 1045px){
+	header{
+		height: 100px;
+		flex-direction: column;
+	}
+	header>h1{
+		font-size: 40px;
+		text-align: center;
+	}
+
+}
+@media(min-width: 1046px) and (max-width: 1187px){
+	header{
+		height: 80px;
+	}
+	header>h1{
+		font-size: 30px;
+	}
+}
+@media(min-width: 1188px) and (max-width: 1366px){
+	header{
+		height: 90px;
+		stop-color: whitesmoke;
+		scroll-behavior: smooth;
+	}
+}
+
+</style>
+</head>
+<body class="bg-light">
+
+	<!-- ----------------------------Header section---------------------------- -->
+	<header>
+		<h1><a href="../HTML/index.html"><span>Ravindra</span></a> Institute of <a href="time.html" id="T">T</a>echnology</h1>
+		<div id="links">
+			<a href="../HTML/index.html"><i class="fas fa-home"></i>Home</a>
+			<a href="department.html"><i class="far fa-building"></i>Departments</a>
+			<a href="library.html"><i class="fas fa-book-open"></i>Library</a>
+			<a href="examinations.html"><i class="fas fa-diagnoses"></i>Examinations</a>
+			<a href="login.html"><i class="fas fa-sign-in-alt"></i>Log-In</a>
+		</div>
+	</header>
+	<!-- ---------------------------Navbar Section------------------------------- -->
+	<nav>
+		<div id="nav-links">
+			<a href="admissions.html"><i class="fas fa-hand-point-right"></i>Admissions</a>
+			<a href="branches.html"><i class="fas fa-layer-group"></i>Branches</a>
+			<a href="palacements.html"><i class="fas fa-road"></i>Placements</a>
+			<a href="alumni.html"><i class="fas fa-users-cog"></i>Alumni</a>
+			<a href="faculty.html"><i class="fas fa-users"></i>Faculty</a>
+			<a href="gallery.html"><i class="fas fa-images"></i>Gallery</a>
+			<a href="facilities.html"><i class="fas fa-universal-access"></i>Facilities</a>
+			<a href="aboutus.html"><i class="far fa-address-card"></i>About-Us</a>
+			<a href="contactus.html"><i class="fas fa-phone-alt"></i>Contact-Us</a>
+		</div>
+	</nav>
+	<!-- ---------------------------landing page------------------- -->
+
+	<div class="justify-content-center container container-sm container-md container-lg">
+		<div class="row">
+			<div class="col-md-10 jumbotron-fluid justify-content-center">
+				<div class="card-header ml-5">
+					<h1 class="h2 text-center text-uppercase table-hover text-justify text-sm-center text-md-center text-lg-center ml-5">Facilities in RIT</h1>
+					<p class="small animate__animated animate__slideInRight text-center">For more Information <a href="contactus.html" class="text-uppercase text-danger">Click Here</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- --------------------aside left-layout---------------- -->
+	<div id="section-facility">
+		<aside class="animate__animated animate__slideInLeft" id="aside-left">
+			<a href="#infrastructure">Infra</a>
+			<a href="#hostels">Hostels</a>
+			<a href="library.html">Library</a>
+			<a href="#labs">Labs</a>
+			<a href="#bank-atm">Bank & ATM</a>
+			
+
+		</aside>
+	</div>
+	<!-- ------------------------aside Right-layout -->
+	<div id="section-facility">
+		<aside class="animate__animated animate__slideInRight" id="aside-right">
+			
+			<a href="#cafteria">Cafteria</a>
+			<a href="#transport">Transport</a>
+			<a href="#health-care">Health care</a>
+			<a href="faculty.html">Facilities to Employees</a>
+		</aside>
+	</div>
+
+	<!--   ----------------body section------------------------- -->
+
+	<!-- ------------------------facilities list-------------------  -->
+
+	<div class="section-facility container bg-light">
+		<section>
+			<!-- ------------------------infrastructure-------------------- -->
+			
+			<div class="container-fluid bg-light" id="infrastructure">
+				<div class=" bg-light">
+					
+
+						<h2 class="h2 text-uppercase mt-5 text-center text-primary">Infracture</h2>
+						<div class="row bg-light">		
+							<div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+								<img src="../Images/facilities/INFRA.jpg" width="75%" height="75%" class="ml-5 pl-5 pt-1">
+							</div>
+						</div>
+
+
+
+
+						<div class="container-fluid mt-0">
+							<div class="jumbotron bg-light">
+								<div class="bod mt-2">
+
+										<div class="row">
+											<div class="column col-sm-5 col-md-5 col-lg-5">
+												<div class="wf-about-us__image">
+													<img src="../Images/facilities/academic-block.jpeg" alt="campus" width="100%" height="250px">
+												</div>
+											</div>
+											<div class="column col-sm-7 col-md-7 col-lg-7">
+												<div class="wf-about-us__content">
+													<h2 class="wf-left-heading">
+													<span>Academic Blocks</span>
+													</h2>
+													<p class="m-sm-auto small">Well-planned, aesthetically appealing and well – ventilated comprehensive infrastructure is the striking feature of VIT-AP. We now have two academic blocks at present, that are specialized buildings which cater to the holistic requirements of the teaching-learning process. Academic Block -1 called as the Sarvepalli Radhakrishnan Block and Academic Block – 2 is called as APJ Abdul Kalam Block. The idea behind these separate blocks is to make every block equipped with the necessary amenities whilst providing the perfect atmosphere for both studies and research.</p>
+												</div>
+											</div>
+										</div>
+
+										<div class="row mt-3">
+											<div class="column col-sm-7 col-md-7 col-lg-7">
+												<div class="wf-about-us__content">
+													<h2 class="wf-left-heading">
+													<span class="h3">Academic Block-1, Area 179090.52 sq.ft.</span>
+													</h2>
+													<p class="m-sm-auto small mt-1">The Sarvepalli Radhakrishnan Block now has the major administrative offices like the Chancellor’s Office, Admissions Office, Finance Office, and other Offices which are responsible for addressing student issues. Apart from these, it also houses the VIT-School of Business (VSB). All the major departments, like the Department of Computer Science, Department of Mechanical Engineering and Department of Electrical Engineering exist here. This block also consists of classrooms and well-designed labs providing the best facilities to students</p>
+												</div>
+											</div>
+											<div class="column col-sm-5 col-md-5 col-lg-5">
+												<div class="wf-about-us__image">
+													<img src="../Images/facilities/block2.jpg" alt="campus" width="100%" height="250px">
+												</div>
+												
+											</div>
+										</div>
+
+										<small class="h3 mt-3">Central Block</small>
+										<div class="row">
+											<div class="column col-sm-6 col-md-6 col-lg-6">
+												<div class="wf-about-us__image">
+													<img src="../Images/facilities/Central-block.jpg" alt="campus" width="100%" height="250px">
+												</div>
+											</div>
+											<div class="column col-sm-6 col-md-6 col-lg-6">
+												<div class="wf-about-us__image">
+													<img src="../Images/facilities/CB-Pool.jpeg" alt="campus" width="100%" height="250px">
+												</div>
+											</div>
+										</div>
+								</div>
+							</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- ------------------------Hostels--------------------------- -->
+
+			<div class="jumbotron bg-light" id="hostels">
+				<div class="container bg-light">
+					<h3 class="h3 text-primary font-weight-bold text-uppercase text-center">Hostel</h3>
+					<div class="jumbotron">
+						<div class="row">
+						<div class="col-sm-6 col-md-6 col-lg-6">
+							<img src="../Images/facilities/hostel.jpg" width="100%" height="250px">
+						</div>
+						<div class="col-sm-6 col-md-6 col-lg-6">
+							<h3 class="h3 text-center">Men's Hostel</h3>
+							<p class="small">The RIT-AP hostels are highly secure and well guarded. Only VITians & RIT authorized personnel are allowed inside. We aspire to make the hostel a ‘home away from home.
+							Each hostel room is equipped with a cot, chair, study table and cupboard. Resident wardens are available 24×7. Provision stores are located in the hostel where students can buy essentials such as mattresses, pillows, buckets, mugs, locks, stationeries, books, soaps.
+
+							Both AC and Non-AC rooms are available. The type of room is allocated on the first-come first serve basis and availability once the hostel fee is paid in full.</p>
+							<button class="btn btn-outline-primary justify-content-center table-hover">contact warden</button>
+						</div>
+					</div>
+					</div>
+					<div class="jumbotron">
+						<div class="row">
+						<div class="col-sm-6 col-md-6 col-lg-6"><h3 class="h3 text-center">Ladies Hostel</h3>
+							<p class="small">Our ladies hostel staff is very friendly and welcoming, the premises are maintained, clean and tidy, always including the bathrooms.The bedrooms are designed and maintained comfy. The location is great added feature with easy proximity to restaurants, medical shops, hospitals, bus and auto stands all the above convenience is available worthy for the money you shell out.</p>
+							<p class="small">Breakfast, Lunch and Dinner are provided with the utmost care and high competency with varieties of food coupled with quality and hygiene catering practices being adopted constantly at the women’s hostel. Grievances on any of the services offered are deal with immediate action by the ladies hostel wardens to ensure quality service is being offered without any interruption for the hostel inmates. The staff is well disciplined, caring and cooperative to the inmates of the hostel and are always ready to provide assistance to their immediate requirements. The hostel warden makes necessary arrangements for required provisions for to satisfy the personal needs of the inmates of the ladies hostel.</p>
+							<button class="btn btn-outline-primary justify-content-center table-hover">contact warden</button>
+						</div>
+						<div class="col-sm-6 col-md-6 col-lg-6">
+							<img src="../Images/facilities/fm-hostel.jpg" width="100%" height="350px">
+						</div>
+					</div>
+					</div>
+				</div>
+			</div>
+			<!-- ------------------------Library--------------------------- -->
+
+			<!-- ------------------------Labs----------------------------- -->
+
+			<!-- ------------------------Bank and ATM----------------------- -->
+
+			<!-- ------------------------Cafteria------------------------- -->
+	
+			<!-- -------------------------Transport------------------------ -->
+	
+			<!-- -------------------------Health Care------------------ -->
+	
+			<!-- -----------------------Facilities to Employee---------------------- -->
+		</section>
+	</div>
+
+	
+	
+	
+	<!-- ---------------------------footer----------------------------- -->
+	<footer>
+		<div id="iname">
+			<h1 style="margin-top: 40px;"><img src="../Images/icons/r.svg"><span><a href="index.html" id="anc"><i>R</i>IT</a></span></h1>
+			<p>&copy;2022 all Rights Reserved by <a href="https://ravindra2467.blogspot.com/" id="blogn">Ravindra</a></p>
+			<span class="mno" id="footer-con"><i class="fas fa-mobile-alt"></i>&nbsp <a href="callTo:+919390974899">+91 93909 74899</a> <span>&nbsp &nbsp</span></i> <i class="fas fa-envelope-open-text"></i><a href="mailTo:ravindra2467@gmail.com" class="a">ravindra2467@gmail.com</a></span>
+		</div>
+	</footer>
+</body>
+</html>

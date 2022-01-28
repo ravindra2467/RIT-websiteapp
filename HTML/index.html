@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>RIT</title>
+	<link rel="stylesheet" type="text/css" href="../CSS/styles.css">
+	<link rel="stylesheet" type="text/css" href="../fontawesome/css/all.css">
+	<link rel="icon" type="image/x-icon" href="../Images/icons/r.svg">
+	<link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../bootstrap/css/mdb.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <style>
+  	input{
+  		margin-top: 1px;
+  		width: 200px;
+  		height: 45px;
+  		border: none;
+  		font-size: 20px;
+  		text-align: center;
+  		background-color: rgba(0, 0, 0, 0.2);
+  		color: whitesmoke;
+  		border-radius: 4px;
+  		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  	}
+
+  	html{
+			scroll-behavior: initial;
+		}
+		header{
+	background-color:black;
+	height:60px;
+	display:flex;
+	flex-direction: row;
+	align-items:center;
+	justify-content:space-between;
+}
+header>h1{
+    font-size: 40px;
+    margin: 0px 0px 0px 10px;
+    color: whitesmoke;
+}
+header>h1>a{
+	text-decoration: none;
+	cursor: pointer;
+}
+header>#links>a{
+    text-decoration: none;
+    color: whitesmoke;
+    margin:7px;
+	padding:6px 10px;
+    border-radius: 10px;
+}
+header>#links>a:hover{
+    cursor: pointer;
+    background-color:yellow;
+	color:limegreen;
+	box-shadow:0 0 10px white;
+    
+}
+.fas,.far{
+	padding: 5px;
+}
+header>h1>a>span{
+    color:yellow;
+}
+/*----- -------------------------------------media queries-----------------------------------------*/
+@media(min-width: 0px) and (max-width:700px ){
+	header{
+		flex-direction: column;
+		height: 130px;
+	}
+	header>h1{
+		font-size: 35px;
+		align-items: center;
+	}
+	header>#lk{
+		position: relative;
+		top: -20px;
+		padding: -10px;
+		align-items: center;
+		display: flex;
+		flex-direction: row;
+		justify-content: normal;
+	}
+}
+@media (max-width: 750px){
+	.banner-content p{
+		width: 90vw;
+	}
+	.banner-content h1{
+		font-size: 9vw;
+		line-height: 53px;
+	}
+}
+@media(min-width: 701px) and (max-width: 1045px){
+	header{
+		height: 100px;
+		flex-direction: column;
+	}
+	header>h1{
+		font-size: 40px;
+		text-align: center;
+	}
+
+}
+@media(min-width: 1046px) and (max-width: 1187px){
+	header{
+		height: 80px;
+	}
+	header>h1{
+		font-size: 30px;
+	}
+}
+@media(min-width: 1188px) and (max-width: 1366px){
+	header{
+		height: 90px;
+		stop-color: whitesmoke;
+		scroll-behavior: smooth;
+	}
+}
+  </style>
+</head>
+<body onload="gettime()">
+
+	<!-- ----------------------------Header section---------------------------- -->
+	<header>
+		<h1 class="animate__animated animate__fadeInRight"><a href="index.html"><span>Ravindra</span></a> Institute of <a href="../pages/time.html" id="T">T</a>echnology</h1>
+		<div id="links">
+			<a href="index.html"><i class="fas fa-home"></i>Home</a>
+			<a href="../pages/department.html"><i class="far fa-building"></i>Departments</a>
+			<a href="../pages/library.html"><i class="fas fa-book-open"></i>Library</a>
+			<a href="../pages/examinations.html"><i class="fas fa-diagnoses"></i>Examinations</a>
+			<a href="../pages/login.html"><i class="fas fa-sign-in-alt"></i>Log-In</a>
+		</div>
+	</header>
+	<!-- ---------------------------Navbar Section------------------------------- -->
+	<nav>
+		<div id="nav-links">
+			<form name="form">
+				<input id="div" class="animate__animated animate__heartBeat" name="clock">
+			</form>
+			<a href="../pages/admissions.html"><i class="fas fa-hand-point-right"></i>Admissions</a>
+			<a href="../pages/branches.html"><i class="fas fa-layer-group"></i>Branches</a>
+			<a href="../pages/palacements.html"><i class="fas fa-road"></i>Placements</a>
+			<a href="../pages/alumni.html"><i class="fas fa-users-cog"></i>Alumni</a>
+			<a href="../pages/faculty.html"><i class="fas fa-users"></i>Faculty</a>
+			<a href="../pages/gallery.html"><i class="fas fa-images"></i>Gallery</a>
+			<a href="../pages/facilities.html"><i class="fas fa-universal-access"></i>Facilities</a>
+			<a href="../pages/aboutus.html"><i class="far fa-address-card"></i>About-Us</a>
+			<a href="../pages/contactus.html"><i class="fas fa-phone-alt"></i>Contact-Us</a>
+		</div>
+	</nav>
+
+	<!-- ----------------------------Landing Page---------------------- -->
+	<div id="landing">
+		<div id="landing-wrap" class="banner-content">
+			<h1 class="animate__animated animate__flipInX"><span class="font-weight-bolder">W</span>elcome to <span>&nbsp <a href="index.html"><i>R</i>IT</a></span></h1>
+			<h3 class="animate__animated animate__flipInX">Chairman Message</h3>
+			<p >He desired to build a knowledge society for the benefit of students hailing from rural 
+				and semi urban regions of Andhra Pradesh. His association with professional courses 
+				such as Engineering, Medical and Pharmacy in Andhra Pradesh spans over three decades.
+				 He dreams of alleviating the status of educational institutions making them Centers 
+				 of Excellence on par with IITs and deemed universities.</p>
+		</div>
+	</div>
+
+	<!-- ----------------------------Description about college--------------------------- -->
+
+	<div class="jumbotron">
+	<section id="desc">
+		<article>
+			<h1>About<span>&nbsp<a href="index.html">RIT</a></span> Institute</h1>
+			<p>RIT Institute, Andhra Pradesh (RIT AP), also known as Ravindra Institute of Technology, Amaravati, is a private institute located near Neerukonda village in Mangalagiri mandal of Guntur district in Andhra Pradesh, India, in the area of the planned capital city Amaravati. The institute was established in 2017 by the Ravindra Trust through the Andhra Pradesh government.</p>
+			<p>We produce creative thinkers, thought leaders, and social workers with deep subject-area expertise. The uniqueness of the school lies in its potential to equip students to deal with real-world problems through rich learning experiences.</p>
+		</article>
+	</section>
+	</div>
+	<!-- --------------------------------table description--------------------------------- -->
+	<div class="container-fluid bg-light">
+		<div class="container-fluid">
+			<div class="jumbotron">
+				<h1 class="h3 text-uppercase font-weight-bolder text-lg-center text-sm-left text-md-center">School of Liberal Arts and Social Sciences</h1>
+				<div class="row bg-light">
+					<div class="col-sm-6 col-md-6 col-lg-6 align-content-center">
+						<img src="../Images/tab1.jpg" id="simg">
+					</div>
+					<div class="col-sm-6 col-md-6 col-lg-6 align-content-center">
+						<h1 class="text-uppercase h5 mt-5">Matrix of progressive changemakers</h1>
+						<h3 class="text-uppercase mt-2">Redefining traditions</h3>
+						<p class="small">We produce creative thinkers, thought leaders, and social workers with deep subject-area expertise. The uniqueness of the school lies in its potential to equip students to deal with real-world problems through rich learning experiences.</p>
+						<button class="btn btn-outline-info">Know more</button>
+					</div>
+				</div>
+			</div>
+			<div class="jumbotron">
+				<h1 class="h3 text-uppercase font-weight-bolder text-lg-center text-sm-left text-md-center">School of Entrepreneurship and Management Studies</h1>
+				<div class="row bg-light">
+					<div class="col-sm-6 col-md-6 col-lg-6 align-content-center">
+						<h1 class="text-uppercase h5 mt-5">To innovate and transform</h1>
+						<h3 class="text-uppercase mt-3">Realising leadership</h3>
+						<p class="small">Our Innovation, Design and Entrepreneurship Academy (IDEA) actively moulds the leaders of tomorrow. 10,000+ sqft. incubator space along with seed funding facilitates remarkable student ventures. We train students to exhibit organisational leadership and gain professional development through the analysis of complex qualitative.</p>
+						<button class="btn btn-outline-info">Know more</button>
+					</div>
+					<div class="col-sm-6 col-md-6 col-lg-6 align-content-center">
+						<img src="../Images/tab2.jpg" id="simg">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- ---------------------------footer-------------------------------------- -->
+	<footer>
+		<div id="iname">
+			<h1><img src="../Images/icons/r.svg"><span><a href="index.html" id="anc"><i>R</i>IT</a></span></h1>
+			<p>&copy;2022 all Rights Reserved by <a href="https://ravindra2467.blogspot.com/" id="blogn">Ravindra</a></p>
+			<span class="mno" id="footer-con"><i class="fas fa-mobile-alt"></i>&nbsp <a href="callTo:+919390974899">+91 93909 74899</a> <span>&nbsp &nbsp</span></i> <i class="fas fa-envelope-open-text"></i><a href="mailTo:ravindra2467@gmail.com" class="a">ravindra2467@gmail.com</a></span>
+		</div>
+	</footer>
+
+	<!-- ---------------------------script code----------------- -->
+	<script src="../js-files/time.js"></script>
+</body>
+</html>
